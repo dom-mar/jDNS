@@ -216,6 +216,20 @@ public class BytePacketBuffer {
     }
 
     /*
+     * Sets byte in buffer on given position to given value */
+    public void setOne(int position, byte value) throws ArrayIndexOutOfBoundsException {
+        if (position >= 512) throw new ArrayIndexOutOfBoundsException("End of buffer");
+        this.buffer[position] = value;
+    }
+
+    /*
+     * Sets two bytes in buffer on given position to given value */
+    public void setTwo(int position, short value) {
+        setOne(position, (byte) (value >>> 8));
+        setOne(position + 1, (byte) (value & 0xFF));
+    }
+
+    /*
      * Getter for buffer */
     public byte[] getBuffer() {
         return buffer;

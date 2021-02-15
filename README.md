@@ -3,9 +3,24 @@ Simple DNS stub resolver implemented in Java 15 by following [guide](https://git
 
 ### Working
 - [x] A record
+- [x] AAAA record
+- [x] NS record
+- [x] CNAME record
+- [x] MX record
 - [x] Single threaded UDP client
-### Not working
-- [ ] Other DNS records
+
 ### Unimplemented
 - [ ] Recursive resolver
 - [ ] Multithreading
+> ####  Low priority
+- [ ] Other DNS records 
+    - [ ] PTR
+    - [ ] CERT
+    - [ ] SRV
+    - [ ] TXT
+    - [ ] SOA
+    - [ ] DNAME
+    - [ ] IPSECKEY
+    - [ ] DNSKEY
+    - [ ] NSEC
+    - [ ] RRSIG

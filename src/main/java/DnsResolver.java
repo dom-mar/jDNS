@@ -8,8 +8,8 @@ public class DnsResolver {
     public static void main(String[] args) throws Exception {
 
         // Domain that is being resolved
-        String qname = "www.yahoo.com";
-        QueryType queryType = QueryType.A;
+        String qname = "google.com";
+        QueryType queryType = QueryType.NS;
 
         // Use Google's DNS resolver
         String server = "8.8.8.8";
