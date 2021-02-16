@@ -41,6 +41,16 @@ public class DnsQuestion {
 
     }
 
+    /*
+     * Getters */
+    public String getName() {
+        return name;
+    }
+
+    public QueryType getQueryType() {
+        return queryType;
+    }
+
     @Override
     public String toString() {
         return "DnsQuestion {" + "\n" +

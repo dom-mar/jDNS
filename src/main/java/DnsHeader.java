@@ -153,13 +153,33 @@ public class DnsHeader {
     }
 
     /*
-     * Setters for ID and recursion*/
+     * Getters and setters */
+    public short getId() {
+        return this.id;
+    }
+
     public void setId(short id) {
         this.id = id;
     }
 
     public void setRecursionDesired(boolean recursionDesired) {
         this.recursionDesired = recursionDesired;
+    }
+
+    public void setResponse(boolean response) {
+        this.response = response;
+    }
+
+    public void setRecursionAvailable(boolean recursionAvailable) {
+        this.recursionAvailable = recursionAvailable;
+    }
+
+    public ResultCode getRescode() {
+        return rescode;
+    }
+
+    public void setRescode(ResultCode rescode) {
+        this.rescode = rescode;
     }
 
     @Override
