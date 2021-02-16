@@ -45,7 +45,7 @@ dig @127.0.0.1 -p 5053 google.com
 
 Expected response:
 
-```bash
+```
 ; <<>> DiG 9.16.11 <<>> @127.0.0.1 -p 5053 google.com
 ; (1 server found)
 ;; global options: +cmd
