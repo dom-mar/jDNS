@@ -16,6 +16,7 @@ from [Emil Hernvall](https://github.com/EmilHernvall).
 
 - [ ] Recursive resolver
 - [ ] Multithreading
+- [ ] Use compression when possible
 
 > #### Low priority
 
